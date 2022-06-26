@@ -1,0 +1,1 @@
+# Nmap 7.92 scan initiated Sun Apr 17 07:05:42 2022 as: nmap -T4 -p- -oA initialscan 10.10.220.44

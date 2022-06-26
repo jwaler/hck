@@ -1,0 +1,17 @@
+# Nmap 7.92 scan initiated Sun Apr 17 07:07:17 2022 as: nmap -A -sV -T4 -p22,80 -oA servicescan 10.10.220.44
+Nmap scan report for 10.10.220.44
+Host is up (0.074s latency).
+
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 7.2p2 Ubuntu 4ubuntu2.6 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 69:e3:2a:24:8b:a4:0d:09:5f:fe:db:fc:d8:50:da:74 (RSA)
+|   256 f5:bd:40:31:56:38:1c:ee:7d:b0:ee:24:a8:00:3d:b8 (ECDSA)
+|_  256 2f:0e:1d:51:78:bf:d7:4b:c8:fe:9e:f3:e1:cb:3b:c9 (ED25519)
+80/tcp open  http    Apache httpd 2.4.18 ((Ubuntu))
+|_http-title: Rick is sup4r cool
+|_http-server-header: Apache/2.4.18 (Ubuntu)
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Apr 17 07:07:26 2022 -- 1 IP address (1 host up) scanned in 9.51 seconds
