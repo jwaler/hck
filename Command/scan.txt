@@ -1,0 +1,4 @@
+rustscan -a 10.10.49.106 -- -A -sC (firewall evading cmd)
+rustscan -a 10.10.49.106 -- -A -sC --ulimit 5000
+usr/sbin/showmount -e 10.10.49.106 - to show nfs share
+

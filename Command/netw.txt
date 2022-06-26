@@ -1,0 +1,7 @@
+# full scan of network (subnet 24)
+sudo nmap 10.8.0.1/24 -Pn
+
+# Check listening port on your machine
+sudo lsof -i -P -n | grep LISTEN
+sudo lsof -i -P -n | grep ESTABLISHED
+

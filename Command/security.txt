@@ -1,0 +1,26 @@
+# lynis
+lynis audit system
+
+# rkhunter
+sudo vim /etc/rkhunter.conf
+cron conf -> /etc/default/rkhunter.conf
+rkhunter --check --sk
+rkhunter --versioncheck
+rkhunter --update
+
+# clamscan
+sudo clamscan --remove --recursive --infected --bell /media/enigma/ACER/ > /var/log/clamav.log.scan-acer.txt &
+sudo clamscan --remove --recursive --infected --bell /media/enigma/DATA/ > /var/log/clamav.log.scan-acer2.txt &
+sudo clamscan --remove --recursive --infected --bell /media/enigma/"Macintosh HD"/ > /var/log/clamav.log.scan-macintosh.txt &
+
+# FOLLOW UP LIVE
+tail --follow /var/log/clamav.log.scan-acer.txt
+tail --follow /var/log/clamav.log.scan-acer2.txt
+tail --follow /var/log/clamav.log.scan-macintosh.txt
+
+# Update clamav
+systemctl stop clamav-freshclam
+sudo freshclam
+systemctl start clamav-freshclam
+
+

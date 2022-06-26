@@ -1,0 +1,4 @@
+usr/sbin/showmount -e 10.10.49.106 - to show nfs share
+
+mkdir /tmp/mount
+sudo mount -t nfs IP:share /tmp/mount/ -nolock

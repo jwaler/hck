@@ -1,0 +1,42 @@
+OWASP TOP 10
+Os command injection
+broken auth
+sensitive data exposure (SDE)
+
+sqlite3 xxx.db
+.tables
+SELECT (req)
+
+XML External entity
+in-band XXE attack
+out-of-band XXE attack (OOB-XXE)
+DTD -> .dtd
+
+Broken access control
+IDOR, or Insecure Direct Object Reference
+
+Security misconfiguration -> default password unchanged
+Cross-scripting (XSS vulnerability) -> unsanitized user input
+- stored xss
+- reflected xss
+- DOM-based xss
+
+xss payloads
+- popups
+- writing html (defacing)
+- xss keylogger (hak5 keystroke stealing)
+- port scanning
+
+<script>
+var x = document.cookie; 
+window.alert(x);
+</script>
+
+insecure deserialization
+use pickleme.py to drop reverse shell with cookies base64 encoded
+
+Know vulnerabilities (missing updates, ie wordpress)
+-> check Exploit DB and use script
+
+Insufficient logging and monitoring
+no logger

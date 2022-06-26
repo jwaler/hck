@@ -1,0 +1,5 @@
+# login with file
+ssh cactus@10.10.90.49 -i id_rsa
+
+# ssh copy file
+scp file.txt user@ip:folder

@@ -1,0 +1,39 @@
+apt install "name"
+apt-get -s install "name" -> simulation only
+apt-get -V -s upgrade -> simulation in verbose mode
+apt-cache policy <package> -> check your version and version available in repo
+aptitude versions <package>
+aptitude -V -s install <package>
+apt-cache search *search term* (to obtain package name)
+apt-cache show *packagename* (to get version details)
+apt-cache policy package (compare act pkg and online pkg)
+
+apt-get remove package
+apt-get install to add package back (if remove by mistake)
+apt-get clean
+apt-get autoclean
+apt-get -f install -> fix broken in case of unmet dependencies
+
+apt-get update
+install then :
+apt-get upgrade
+
+# list with kwarg or list all
+apt list | grep "kword"
+
+Remove safely :
+sudo apt-get remove 'filterword.*'apt install "name"
+apt-get -s install "name" -> simulation only
+apt-get -V -s upgrade -> simulation in verbose mode
+apt-cache policy <package> -> check your version and version available in repo
+aptitude versions <package>
+aptitude -V -s install <package>
+apt-cache search *search term* (to obtain package name)
+apt-cache show *packagename* (to get version details)
+apt-cache policy package (compare act pkg and online pkg)
+
+apt-get remove package
+apt-get install to add package back (if remove by mistake)
+apt-get clean
+apt-get autoclean
+apt-get -f install -> fix broken in case of unmet dependencies

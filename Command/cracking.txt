@@ -1,0 +1,41 @@
+## CRACKING METHO
+
+## LIB
+/usr/share/SecLists/Usernames/top-usernames-shortlist.txt
+/usr/share/SecLists/Usernames
+/usr/share/SecLists/Passwords
+
+## ID
+hash_identifier HASH
+
+## JOHN
+john --wordlist=/usr/share/wordlists/rockyou.txt Downloads/first_task_hashes/hash2.txt
+sudo hashcat -m100 -a0 1A732667F3917C0F4AA98BB13011B9090C6F8065 rockyou.txt
+m = type of hash
+a = 0 if using wordlist, 3 if brute force, etc
+
+john --wordlist=/usr/share/wordlists/rockyou.txt --format=Raw-SHA256 \Downloads/first_task_hashes/hash3.txt
+john --single --format=raw-sha256 hashes.txt (word mangling)
+unshadow local_passwd local_shadow > unshadowed.txt (if /etc/passwd file)
+
+zip2john zipfile.zip > zip_hash.txt
+rar2john rarfile.rar > rar_hash.txt
+ssh2john or python3 /opt/ssh2john.py or python /usr/share/john/ssh2john.py
+keepass2john keepass.kdbx > hash.hash
+
+Crypto math 20 % 5 = 0 (remainders)
+Types of encryption
+DES - old and insecure
+AES - secured but borderline
+RSA - The best as of now (public key and private key) -> Rivest Shamir Adleman
+
+python rsatool.py -p 4391 -q 6659 (for Crypto CTFS, see later)
+
+## HYDRA
+
+hydra -t 16 -l USERNAME -P /usr/share/wordlists/rockyou.txt -vV 10.10.220.193 ssh
+(have ssh user but no pwd)
+## crack ftp password 
+hydra -t 4 -l dale -P /usr/share/wordlists/rockyou.txt -vV 10.10.10.6 ftp
+gzip -d file (to unzip)
+

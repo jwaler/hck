@@ -1,0 +1,33 @@
+windows cmd
+getsystem / show SYSTEM
+hashdump / for hashed passwords
+dir
+type
+cd
+dir /b/s *.txt
+ping
+tracert
+ipconfig /all
+netstat
+hostname
+getmac
+arp -a
+taskkill
+
+
+whoami
+ver
+ipconfig
+tasklist
+netstat -an
+ipconfig
+ifconfig
+netstat
+icalcs - ls -al and chmod functions
+
+Linux
+    whoami
+    id
+    ifconfig/ip addr
+    uname -a
+    ps -ef

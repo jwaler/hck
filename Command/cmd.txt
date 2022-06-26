@@ -1,0 +1,46 @@
+# distro version
+lsb_release -a
+# Kernel version
+uname -r
+
+# Display Motd
+ls /etc/update-motd.d/
+
+cat /etc/passwd
+cat /etc/shells
+cat /etc/groups
+cat /etc/crontab
+
+# which user is using /bin/bash or zsh
+grep 'bin/bash' /etc/passwd | cut -d: -f1
+
+# Check which user in shell got a "home"
+grep '/home/' /etc/passwd | cut -d: -f1
+
+# Back up
+/etc/apt/sources.list
+sudo cp /etc/apt/sources.list /etc/apt/sources.list.original
+sudo cp /var/lib/dpkg/status /var/lib/dpkg/status.original
+
+# system upgrade
+ubuntu-support-status
+
+# crontabs
+less /etc/crontab
+crontab -l (for current user)
+
+## to search the file system for SUID/GUID files
+find / -perm -u=s -type f 2>/dev/null
+
+## generate a hash with new passcode
+ls -l /etc/shadow
+mkpasswd -m sha-512 newpasswordhere
+
+ls -l /etc/passwd
+openssl passwd newpasswordhere
+
+## To check your privilege
+sudo -l
+
+##SUID SGID Executables list
+find / -type f -a \( -perm -u+s -o -perm -g+s \) -exec ls -l {} \; 2> /dev/null

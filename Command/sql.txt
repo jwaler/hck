@@ -1,0 +1,4 @@
+## SQL
+
+connect to mysql
+mysql -h [IP] -u [username] -p
